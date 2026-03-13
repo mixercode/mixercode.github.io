@@ -17,7 +17,7 @@ export default function NavBar() {
               end
               className={({ isActive }) =>
                 isActive
-                  ? "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-[#3b82f6]"
+                  ? "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-[#164AE8]"
                   : "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors duration-300"
               }
             >
@@ -25,7 +25,7 @@ export default function NavBar() {
                 <>
                   {label}
                   <span
-                    className={`absolute -bottom-1 h-0.5 bg-[#3b82f6] rounded-full transition-all duration-300 ${
+                    className={`absolute -bottom-1 h-0.5 bg-[#4a8cf7] rounded-full transition-all duration-300 ${
                       isActive
                         ? "w-full opacity-100"
                         : "w-0 opacity-0 group-hover:w-1/2 group-hover:opacity-50"

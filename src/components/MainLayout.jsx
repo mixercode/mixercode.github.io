@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
+import { useRef } from "react";
 import InfoCard from "./InfoCard";
 import DottedBackground from "./DottedBackground";
+import { GlobalSpotlight } from "./ReactBits/MagicBento";
 
 const USER_INFO = {
   name: "José Miguel Flores Flores",
@@ -10,9 +12,20 @@ const USER_INFO = {
 };
 
 export default function MainLayout() {
+  const layoutRef = useRef(null);
+
   return (
     <DottedBackground>
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12 flex flex-col lg:flex-row gap-8">
+      <div
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12 flex flex-col lg:flex-row gap-8"
+        ref={layoutRef}
+      >
+        <GlobalSpotlight
+          gridRef={layoutRef}
+          spotlightRadius={400}
+          glowColor="22, 74, 232"
+          cardSelector=".spotlight-card"
+        />
         <aside className="w-full lg:w-80 lg:sticky lg:top-12 h-fit shrink-0 z-20">
           <InfoCard
             name={USER_INFO.name}
