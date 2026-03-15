@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 const NAV_ITEMS = [
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/certificates", label: "Certificates" },
+  { path: "/about", label: "Sobre mi" },
+  { path: "/projects", label: "proyectos" },
+  { path: "/certificates", label: "certificados" },
 ];
 
 export default function NavBar() {

@@ -17,7 +17,7 @@ export default function MainLayout() {
   return (
     <DottedBackground>
       <div
-        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12 flex flex-col lg:flex-row gap-8"
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-5 flex flex-col lg:flex-row gap-8"
         ref={layoutRef}
       >
         <GlobalSpotlight

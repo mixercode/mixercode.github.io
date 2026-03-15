@@ -19,7 +19,7 @@ export default function InfoCard({ name, location, email, cellphone }) {
         <p className="text-xl font-semibold text-center">{name}</p>
 
         <div className="w-2/3 rounded-full bg-[#121b36] px-4 py-1 text-center">
-          <p className="text-base font-medium text-[#164ae8]">
+          <p className="text-base font-medium text-gray-400">
             Desarrollador Web Fullstack
           </p>
         </div>

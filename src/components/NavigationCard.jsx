@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 export default function NavigationCard({ title, children }) {
   return (
     <Card
-      className="relative w-full max-w-5xl mx-auto min-h-87.5 p-10 overflow-visible "
+      className="relative w-full max-w-5xl mx-auto min-h-87.5 p-10 m-10 overflow-visible "
       allowOverflow={true}
     >
       <div className="absolute -top-5 left-6 z-10">
