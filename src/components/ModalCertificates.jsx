@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { IoIosClose } from "react-icons/io";
 
-export default function Modal({ isOpen, onClose, pdfUrl, title }) {
+export default function ModalCertificates({ isOpen, onClose, pdfUrl, title }) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

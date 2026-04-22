@@ -1,4 +1,5 @@
 import NavigationCard from "../components/NavigationCard";
+import ProyectsSection from "../components/ProyectsSection";
 import WindowsCard from "../components/WindowsCard";
 
 export default function ProjectsPage() {
@@ -24,6 +25,7 @@ export default function ProjectsPage() {
         />
         <h2 className="text-3xl font-bold text-gray-100 ">Restaurante</h2>
       </div>
+      <ProyectsSection />
     </>
   );
 }
