@@ -5,15 +5,14 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 export default function ModalProjectDetails({ isOpen, onClose, project }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  // 1. NUEVO: Creamos una única función responsable de cerrar y limpiar (SRP)
   const handleCloseModal = useCallback(() => {
-    setActiveImageIndex(0); // Reseteamos el índice de la imagen inmediatamente
-    onClose(); // Notificamos al padre que cierre el modal
+    setActiveImageIndex(0);
+    onClose();
   }, [onClose]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") handleCloseModal(); // Usamos la nueva función aquí
+      if (e.key === "Escape") handleCloseModal();
     };
 
     if (isOpen) {
@@ -29,14 +28,12 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
     };
   }, [isOpen, handleCloseModal]);
 
-  // ELIMINAMOS el useEffect que causaba el error de renders en cascada.
-
   if (!isOpen || !project) return null;
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 sm:p-6 transition-all duration-300"
-      onClick={handleCloseModal} // Usamos la nueva función aquí
+      onClick={handleCloseModal}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
@@ -51,23 +48,35 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
             {project.title}
           </h3>
           <button
-            onClick={handleCloseModal} // Usamos la nueva función aquí
+            onClick={handleCloseModal}
             className="text-gray-400 hover:text-white transition-all p-1 rounded-lg hover:bg-[#2A2F3E] active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
           >
             <IoIosClose size={28} />
           </button>
         </div>
 
-        {/* BODY - Diseño dividido (Grid / Flex) */}
+        {/* BODY */}
         <div className="flex flex-col lg:flex-row grow overflow-y-auto lg:overflow-hidden bg-[#0d111a]">
-          {/* SECCIÓN IZQUIERDA: Galería de Imágenes */}
+          {/* SECCIÓN IZQUIERDA: Galería */}
           <div className="w-full lg:w-3/5 p-6 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-[#2A2F3E] overflow-y-auto">
-            {/* Imagen Principal */}
-            <div className="relative w-full aspect-video bg-[#1a1f2e] rounded-xl overflow-hidden border border-[#2A2F3E]">
+            {/* CONTENEDOR DE IMAGEN PRINCIPAL MEJORADO */}
+            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[450px] bg-[#090b10] rounded-xl overflow-hidden border border-[#2A2F3E] flex items-center justify-center group">
+              {/* 1. Fondo Desenfocado (El secreto para el aspecto Premium) */}
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-40 blur-2xl scale-110 transition-all duration-500"
+                style={{
+                  backgroundImage: `url(${project.images[activeImageIndex]})`,
+                }}
+              />
+
+              {/* 2. Capa oscura sutil para garantizar contraste */}
+              <div className="absolute inset-0 bg-black/20" />
+
+              {/* 3. Imagen Real (object-contain) */}
               <img
                 src={project.images[activeImageIndex]}
                 alt={`Captura principal de ${project.title}`}
-                className="w-full h-full object-cover transition-opacity duration-300"
+                className="relative z-10 w-full h-full object-contain transition-opacity duration-300 drop-shadow-2xl"
                 loading="lazy"
               />
             </div>
@@ -85,10 +94,11 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
                         : "border-transparent opacity-50 hover:opacity-100"
                     }`}
                   >
+                    {/* Para las miniaturas mantenemos object-cover pero alineamos arriba por si son verticales */}
                     <img
                       src={img}
                       alt={`Miniatura ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </button>
                 ))}
@@ -96,9 +106,8 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
             )}
           </div>
 
-          {/* SECCIÓN DERECHA: Detalles y Enlaces */}
+          {/* SECCIÓN DERECHA: Detalles (Sin cambios, funciona perfecto) */}
           <div className="w-full lg:w-2/5 p-6 flex flex-col gap-6 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2A2F3E] scrollbar-track-transparent">
-            {/* Descripción */}
             <div>
               <h4 className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">
                 Acerca del proyecto
@@ -108,7 +117,6 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
               </p>
             </div>
 
-            {/* Tecnologías */}
             <div>
               <h4 className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-3">
                 Stack Tecnológico
@@ -125,7 +133,6 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
               </div>
             </div>
 
-            {/* Enlaces (Botones de acción) */}
             <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-3">
               {project.liveUrl && (
                 <a
