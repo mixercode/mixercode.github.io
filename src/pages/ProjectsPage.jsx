@@ -1,5 +1,5 @@
 import NavigationCard from "../components/NavigationCard";
-import ProyectsSection from "../components/ProyectsSection";
+import ProjectsSection from "../components/ProjectsSection";
 import WindowsCard from "../components/WindowsCard";
 
 export default function ProjectsPage() {
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
         </div>
       </NavigationCard>
 
-      <ProyectsSection />
+      <ProjectsSection />
     </>
   );
 }
