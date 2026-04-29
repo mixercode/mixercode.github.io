@@ -159,4 +159,145 @@ export const OTHERS_PROJECTS_DATA = [
     technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/6/1.png",
   },
+  {
+    id: 11,
+    title: "Pagina Web de liogistica de paquetes",
+    description:
+      "Pagina web de logistica de paquetes desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de logistica de paquetes, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/7/1.png",
+      "/thumbnails/proyects/PaginasWeb/7/2.png",
+      "/thumbnails/proyects/PaginasWeb/7/3.png",
+      "/thumbnails/proyects/PaginasWeb/7/4.png",
+      "/thumbnails/proyects/PaginasWeb/7/5.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/7/1.png",
+  },
+  {
+    id: 12,
+    title: "Pagina Web de una lavanderia",
+    description:
+      "Pagina web de una lavanderia desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de lavanderia, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/8/1.png",
+      "/thumbnails/proyects/PaginasWeb/8/2.png",
+      "/thumbnails/proyects/PaginasWeb/8/3.png",
+      "/thumbnails/proyects/PaginasWeb/8/4.png",
+      "/thumbnails/proyects/PaginasWeb/8/5.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/8/1.png",
+  },
+  {
+    id: 13,
+    title: "Pagina Web de una prestadora de servicios empresariales",
+    description:
+      "Pagina web de una prestadora de servicios empresariales desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios empresariales, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/9/1.png",
+      "/thumbnails/proyects/PaginasWeb/9/2.png",
+      "/thumbnails/proyects/PaginasWeb/9/3.png",
+      "/thumbnails/proyects/PaginasWeb/9/4.png",
+      "/thumbnails/proyects/PaginasWeb/9/5.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/9/1.png",
+  },
+  {
+    id: 14,
+    title: "Pagina Web de grupo de autores",
+    description:
+      "Pagina web de grupo de autores desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de obras literarias, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/10/1.png",
+      "/thumbnails/proyects/PaginasWeb/10/2.png",
+      "/thumbnails/proyects/PaginasWeb/10/3.png",
+      "/thumbnails/proyects/PaginasWeb/10/4.png",
+      "/thumbnails/proyects/PaginasWeb/10/5.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/10/1.png",
+  },
+  {
+    id: 15,
+    title: "Pagina Web de despacho de abogados y contadores",
+    description:
+      "Pagina web de despacho de abogados y contadores desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios legales y contables, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/11/1.png",
+      "/thumbnails/proyects/PaginasWeb/11/2.png",
+      "/thumbnails/proyects/PaginasWeb/11/3.png",
+      "/thumbnails/proyects/PaginasWeb/11/4.png",
+      "/thumbnails/proyects/PaginasWeb/11/5.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/11/1.png",
+  },
+  {
+    id: 16,
+    title: "Pagina Web de servicios de construccion",
+    description:
+      "Pagina web de servicios de construccion desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de construccion, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/12/1.png",
+      "/thumbnails/proyects/PaginasWeb/12/2.png",
+      "/thumbnails/proyects/PaginasWeb/12/3.png",
+      "/thumbnails/proyects/PaginasWeb/12/4.png",
+      "/thumbnails/proyects/PaginasWeb/12/5.png",
+      "/thumbnails/proyects/PaginasWeb/12/6.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/12/1.png",
+  },
+  {
+    id: 17,
+    title: "Pagina Web de renta de propiedades",
+    description:
+      "Pagina web de renta de propiedades desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de propiedades en renta, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/13/1.png",
+      "/thumbnails/proyects/PaginasWeb/13/2.png",
+      "/thumbnails/proyects/PaginasWeb/13/3.png",
+      "/thumbnails/proyects/PaginasWeb/13/4.png",
+      "/thumbnails/proyects/PaginasWeb/13/5.png",
+      "/thumbnails/proyects/PaginasWeb/13/6.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/13/1.png",
+  },
+  {
+    id: 18,
+    title: "Pagina Web de servicio de renta de transporte",
+    description:
+      "Pagina web de servicio de renta de transporte desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de renta de transporte, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/14/1.png",
+      "/thumbnails/proyects/PaginasWeb/14/2.png",
+      "/thumbnails/proyects/PaginasWeb/14/3.png",
+      "/thumbnails/proyects/PaginasWeb/14/4.png",
+      "/thumbnails/proyects/PaginasWeb/14/5.png",
+      "/thumbnails/proyects/PaginasWeb/14/6.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/14/1.png",
+  },
+  {
+    id: 19,
+    title: "Pagina Web de venta y renta de maquinaria de construccion",
+    description:
+      "Pagina web de venta y renta de maquinaria de construccion desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de venta y renta de maquinaria de construccion, ofreciendo una experiencia de navegación interactiva y personalizada.",
+    images: [
+      "/thumbnails/proyects/PaginasWeb/15/1.png",
+      "/thumbnails/proyects/PaginasWeb/15/2.png",
+      "/thumbnails/proyects/PaginasWeb/15/3.png",
+      "/thumbnails/proyects/PaginasWeb/15/4.png",
+      "/thumbnails/proyects/PaginasWeb/15/5.png",
+      "/thumbnails/proyects/PaginasWeb/15/6.png",
+      "/thumbnails/proyects/PaginasWeb/15/7.png",
+      "/thumbnails/proyects/PaginasWeb/15/8.png",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    previewUrl: "/thumbnails/proyects/PaginasWeb/15/1.png",
+  },
 ];
