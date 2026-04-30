@@ -25,7 +25,7 @@ export default function ProjectsSection() {
   return (
     <section className="w-full max-w-7xl mx-auto px-4">
       {RESTAURANT_DATA && (
-        <div className="mb-12">
+        <div className="mb-3">
           <SectionHeader title="Restaurante" />
           <SectionCard data={RESTAURANT_DATA} openModal={handleOpenModal} />
         </div>

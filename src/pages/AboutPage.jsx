@@ -20,7 +20,7 @@ export default function AboutPage() {
                     <strong className="text-white font-bold">
                       {ABOUT_ME_DATA.name}
                     </strong>
-                    . {text.replace("Soy un Desarrollador", "Un Desarrollador")}
+                    . {text}
                   </>
                 ) : (
                   text

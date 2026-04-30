@@ -1,21 +1,17 @@
 import CertificatesSection from "../components/CertificatesSection";
 import NavigationCard from "../components/NavigationCard";
+import { CERTIFICATES_TEXT } from "../data/portafolioData";
 
 export default function CertificatePage() {
   return (
     <>
       <NavigationCard title={"Certificados"}>
         <div className="flex flex-row gap-10">
-          <p className="w-full text-left">
-            Como apacionado por el aprendizaje continuo, he obtenido diversos
-            certificados que respaldan mis habilidades y conocimientos en el
-            campo de la programación. Estos certificados reflejan mi compromiso
-            con la excelencia y mi dedicación para mantenerme actualizado en las
-            últimas tecnologías y prácticas de desarrollo. Cada certificado
-            representa un hito importante en mi trayectoria profesional,
-            demostrando mi capacidad para adquirir nuevas habilidades y
-            aplicarlas de manera efectiva en proyectos reales.
-          </p>
+          {CERTIFICATES_TEXT.paragraphs.map((text, index) => (
+            <p key={index} className="w-full text-left">
+              {text}
+            </p>
+          ))}
         </div>
       </NavigationCard>
 
