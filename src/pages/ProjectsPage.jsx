@@ -23,7 +23,7 @@ export default function ProjectsPage() {
             <h3 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-4">
               Retos Técnicos y Soluciones
             </h3>
-            {/* Grid optimizado para mejor legibilidad en pantallas grandes */}
+
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {PROJECTS_DATA.map((project) => (
                 <li

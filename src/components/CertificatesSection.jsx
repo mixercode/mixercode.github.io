@@ -18,7 +18,7 @@ export default function CertificatesSection() {
         />
         <h2 className="text-3xl font-bold text-gray-100 ">Certificados</h2>
       </div>
-      <SectionCard data={CERTIFICATES_DATA} openModal={openModal} />
+      <SectionCard data={CERTIFICATES_DATA} openModal={openModal} hasBlur />
 
       <Modal
         isOpen={!!selectedCert}

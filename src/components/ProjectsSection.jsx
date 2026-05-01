@@ -27,7 +27,11 @@ export default function ProjectsSection() {
       {RESTAURANT_DATA && (
         <div className="mb-3">
           <SectionHeader title="Restaurante" />
-          <SectionCard data={RESTAURANT_DATA} openModal={handleOpenModal} />
+          <SectionCard
+            data={RESTAURANT_DATA}
+            openModal={handleOpenModal}
+            hasBlur
+          />
         </div>
       )}
 
@@ -39,6 +43,7 @@ export default function ProjectsSection() {
               data={ADMIN_ARCHIVOS_DATA}
               openModal={handleOpenModal}
               gridClass="grid-cols-1 sm:grid-cols-2"
+              hasBlur
             />
           </div>
         )}
@@ -50,6 +55,7 @@ export default function ProjectsSection() {
               data={GASOLINERIA_DATA}
               openModal={handleOpenModal}
               gridClass="grid-cols-1 sm:grid-cols-2"
+              hasBlur
             />
           </div>
         )}
@@ -57,13 +63,18 @@ export default function ProjectsSection() {
 
       <div className="mb-12">
         <SectionHeader title="Otros Proyectos" />
-        <SectionCard data={OTHERS_PROJECTS_DATA} openModal={handleOpenModal} />
+        <SectionCard
+          data={OTHERS_PROJECTS_DATA}
+          openModal={handleOpenModal}
+          hasBlur
+        />
       </div>
 
       <Modal
         isOpen={!!selectedProject}
         onClose={handleCloseModal}
         project={selectedProject}
+        hasBlur={true}
       />
     </section>
   );
