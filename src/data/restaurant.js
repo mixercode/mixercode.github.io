@@ -3,7 +3,7 @@ export const RESTAURANT_DATA = [
     id: 1,
     title: "Pagina web",
     description:
-      "Pagina web para un restaurante, con un diseño moderno y atractivo, con una galería de imágenes y el menu disponible",
+      "Interfaz moderna optimizada para el sector foodie. Incluye una galería de alta resolución y un menú digital auto-gestionable. Foco principal en el rendimiento, accesibilidad y una identidad visual sofisticada que refuerza el branding del establecimiento.",
     images: [
       "/thumbnails/proyects/Contenedor/Web/1.png",
       "/thumbnails/proyects/Contenedor/Web/2.png",
@@ -12,26 +12,35 @@ export const RESTAURANT_DATA = [
       "/thumbnails/proyects/Contenedor/Web/5.png",
       "/thumbnails/proyects/Contenedor/Web/6.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/Contenedor/Web/1.png",
   },
   {
     id: 2,
     title: "Sistema de Caja",
-    description: "Applicacion web para un sistema de caja para un restaurante",
+    description:
+      "Aplicación web integral para el control de flujo de caja y gestión de pedidos en tiempo real. Desarrollé una arquitectura basada en transacciones atómicas para garantizar la integridad financiera, integrando una base de datos relacional (PostgreSQL) para el seguimiento detallado de ventas e inventarios. La lógica de negocio permite la gestión de múltiples métodos de pago, cierre de caja automático y reportes analíticos de rendimiento diario.",
     images: [
       "/thumbnails/proyects/Contenedor/Caja/1.png",
       "/thumbnails/proyects/Contenedor/Caja/2.png",
       "/thumbnails/proyects/Contenedor/Caja/3.png",
       "/thumbnails/proyects/Contenedor/Caja/4.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "AWS S3, EC2",
+    ],
     previewUrl: "/thumbnails/proyects/Contenedor/Caja/1.png",
   },
   {
     id: 3,
     title: "Administrador de restaurante",
-    description: "Applicacion web para gestionar y administrar un restaurante",
+    description:
+      "Sistema centralizado para la gestión operativa y administrativa de restaurantes. Desarrollé una solución robusta que integra módulos de control de inventario automatizado, gestión de personal y analítica de ventas en tiempo real. Utilicé una arquitectura de capas en el backend para separar la lógica de negocio de los controladores, garantizando un código mantenible y escalable. La base de datos está normalizada para manejar relaciones complejas entre insumos, platos y pedidos.",
     images: [
       "/thumbnails/proyects/Contenedor/Admin/1.png",
       "/thumbnails/proyects/Contenedor/Admin/2.png",
@@ -41,26 +50,41 @@ export const RESTAURANT_DATA = [
       "/thumbnails/proyects/Contenedor/Admin/6.png",
       "/thumbnails/proyects/Contenedor/Admin/7.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "AWS S3, EC2",
+    ],
     previewUrl: "/thumbnails/proyects/Contenedor/Admin/1.png",
   },
   {
     id: 4,
     title: "Administrador de Cocina",
-    description: "Applicacion web para gestionar y administrar un restaurante",
+    description:
+      "Desarrollo de una plataforma de alta disponibilidad para la gestión operativa de cocinas en centros gastronómicos. El sistema centraliza el flujo de pedidos mediante un tablero Kanban en tiempo real, optimizando los tiempos de preparación y entrega. Implementé una lógica de backend robusta para el procesamiento de transacciones, permitiendo la conciliación automática de ventas y el cálculo de márgenes de contribución por plato.",
     images: [
       "/thumbnails/proyects/Contenedor/AdminCocina/1.png",
       "/thumbnails/proyects/Contenedor/AdminCocina/2.png",
       "/thumbnails/proyects/Contenedor/AdminCocina/3.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "AWS S3, EC2",
+    ],
     previewUrl: "/thumbnails/proyects/Contenedor/AdminCocina/1.png",
   },
   {
     id: 5,
     title: "Applicacion de Cocina",
     description:
-      "Applicacion Movile para gestionar resivir comanda y gestionar los platillos disponibles",
+      "Aplicación móvil multiplataforma diseñada para agilizar la toma de pedidos y la comunicación entre salón y cocina. Implementé una arquitectura basada en WebSockets (o Supabase Realtime) para garantizar que cada pedido llegue instantáneamente al KDS (Kitchen Display System). La app incluye un módulo de control dinámico que permite a los capitanes de meseros habilitar o deshabilitar platillos del menú global según la disponibilidad de insumos, evitando errores de servicio y mejorando la experiencia del comensal.",
     images: [
       "/thumbnails/proyects/Contenedor/AppCocina/1.png",
       "/thumbnails/proyects/Contenedor/AppCocina/2.png",
@@ -70,14 +94,20 @@ export const RESTAURANT_DATA = [
       "/thumbnails/proyects/Contenedor/AppCocina/6.png",
       "/thumbnails/proyects/Contenedor/AppCocina/7.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "AWS S3, EC2",
+    ],
     previewUrl: "/thumbnails/proyects/Contenedor/AppCocina/1.png",
   },
   {
     id: 6,
     title: "Applicacion de Mesero",
     description:
-      "Applicacion Movile para hacer pedidos y gestionar las mesas disponibles en el restaurante",
+      "Herramienta móvil enfocada en la experiencia del usuario (UX) para personal de servicio. La app integra una gestión dinámica de mesas con estética minimalista y Dark Mode, diseñada para reducir la carga cognitiva en entornos de alta presión. Implementé flujos de trabajo inteligentes para la toma de comandas personalizadas, permitiendo modificaciones rápidas y asignación por comensal, todo respaldado por una base de datos PostgreSQL optimizada para consultas de alta concurrencia.",
     images: [
       "/thumbnails/proyects/Contenedor/AppMesero/1.png",
       "/thumbnails/proyects/Contenedor/AppMesero/2.png",
@@ -90,7 +120,13 @@ export const RESTAURANT_DATA = [
       "/thumbnails/proyects/Contenedor/AppMesero/9.png",
       "/thumbnails/proyects/Contenedor/AppMesero/10.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "AWS S3, EC2",
+    ],
     previewUrl: "/thumbnails/proyects/Contenedor/AppMesero/1.png",
   },
 ];
