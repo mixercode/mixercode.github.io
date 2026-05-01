@@ -3,7 +3,7 @@ export const OTHERS_PROJECTS_DATA = [
     id: 1,
     title: "Applicacion de Cursos",
     description:
-      "Applicacion de cursos desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de cursos en línea, ofreciendo una experiencia de aprendizaje interactiva y personalizada.",
+      "Ecosistema digital para el consumo de cursos online enfocado en una experiencia de usuario premium. Desarrollé una interfaz fluida e inmersiva utilizando TailwindCSS y Next.js, integrando un reproductor de video personalizado que gestiona el progreso del estudiante en tiempo real. La arquitectura backend se apoya en PostgreSQL y AWS, permitiendo el seguimiento detallado de módulos completados, gestión de certificaciones y un dashboard analítico para instructores.",
     images: [
       "/thumbnails/proyects/Cursos/1.png",
       "/thumbnails/proyects/Cursos/2.png",
@@ -18,14 +18,20 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/Cursos/11.png",
       "/thumbnails/proyects/Cursos/12.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "Nextjs",
+      "Typescript",
+      "AWS S3",
+      "AWS Amplify",
+      "PostgreSQL",
+    ],
     previewUrl: "/thumbnails/proyects/Cursos/1.png",
   },
   {
     id: 2,
     title: "Applicacion de Revista Digital",
     description:
-      "Applicacion de revista digital desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de artículos y contenido multimedia, ofreciendo una experiencia de lectura interactiva y personalizada.",
+      "Plataforma de contenido editorial enfocada en el engagement del usuario. Desarrollé una interfaz inmersiva que permite a los lectores explorar artículos y contenido multimedia mediante un sistema de recomendaciones basado en intereses. Utilicé AWS S3 para el almacenamiento escalable de activos digitales y optimicé el rendimiento mediante lazy loading y procesamiento de imágenes, logrando una experiencia de lectura fluida, rápida y estéticamente sofisticada.",
     images: [
       "/thumbnails/proyects/Gda/1.png",
       "/thumbnails/proyects/Gda/2.png",
@@ -35,14 +41,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/Gda/6.png",
       "/thumbnails/proyects/Gda/7.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/Gda/1.png",
   },
   {
     id: 3,
     title: "Applicacion de Administracion de inmobiliaria",
     description:
-      "Applicacion de administracion de inmobiliaria desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios gestionar propiedades, clientes y transacciones de manera eficiente, ofreciendo una experiencia de administración inmobiliaria interactiva y personalizada.",
+      "Plataforma integral desarrollada para la digitalización de operaciones inmobiliarias. Diseñé una arquitectura escalable en AWS que centraliza la gestión de inventario, el seguimiento de prospectos (CRM) y el control de cierres de ventas. La aplicación utiliza React para una gestión de estado compleja y Tailwind CSS para un dashboard administrativo de alto rendimiento, optimizando el tiempo de respuesta en la visualización de transacciones financieras y estados de propiedad en tiempo real.",
     images: [
       "/thumbnails/proyects/Inmobiliaria/1.png",
       "/thumbnails/proyects/Inmobiliaria/2.png",
@@ -51,28 +57,35 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/Inmobiliaria/5.png",
       "/thumbnails/proyects/Inmobiliaria/6.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Nodejs",
+      "AWS EC2",
+      "AWS S3",
+    ],
     previewUrl: "/thumbnails/proyects/Inmobiliaria/1.png",
   },
   {
     id: 4,
     title: "Applicacion de registro de vigilancia",
     description:
-      "Applicacion de registro de vigilancia desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios gestionar y registrar actividades de vigilancia de manera eficiente, ofreciendo una experiencia de administración de seguridad interactiva y personalizada.",
+      "Solución móvil de alta eficiencia para el monitoreo y registro de actividades de seguridad privada. Implementé una interfaz de fricción cero utilizando React Native y Tailwind CSS, optimizada para el registro rápido de eventos bajo condiciones de alta carga operativa. La plataforma centraliza el flujo de información entre el personal de campo y la administración, ofreciendo un dashboard interactivo para el análisis de patrullajes, cumplimiento de rondas y gestión de alertas críticas.",
     images: [
       "/thumbnails/proyects/VigilanciaApp/1.png",
       "/thumbnails/proyects/VigilanciaApp/2.png",
       "/thumbnails/proyects/VigilanciaApp/3.png",
       "/thumbnails/proyects/VigilanciaApp/4.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React Native", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/VigilanciaApp/1.png",
   },
   {
     id: 5,
     title: "Applicacion de puntos",
     description:
-      "Applicacion de puntos desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios gestionar y registrar actividades de puntos de manera eficiente, ofreciendo una experiencia de administración de puntos interactiva y personalizada.",
+      "Aplicación móvil multiplataforma diseñada para la gestión de programas de lealtad empresarial. Implementé una arquitectura basada en microtransacciones que garantiza la integridad del saldo de los usuarios mediante el uso de transacciones atómicas en la base de datos. La solución utiliza AWS para el procesamiento de eventos en tiempo real, permitiendo la asignación y redención instantánea de puntos mediante escaneo de códigos QR .",
     images: [
       "/thumbnails/proyects/Wallet/1.jpg",
       "/thumbnails/proyects/Wallet/2.jpg",
@@ -80,14 +93,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/Wallet/4.jpg",
       "/thumbnails/proyects/Wallet/5.jpg",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React Native", "JavaScript", "AWS EC2"],
     previewUrl: "/thumbnails/proyects/Wallet/1.jpg",
   },
   {
     id: 6,
     title: "Pagina Web de una constructora",
     description:
-      "Pagina web de una constructora desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de proyectos de construcción, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución web de alta gama enfocada en la experiencia visual y la identidad de marca. Desarrollé una interfaz moderna con Tailwind CSS, creando una narrativa visual envolvente para cada proyecto. La plataforma incluye galerías interactivas, integración de mapas para ubicación de obras y un sistema de gestión de contenidos (CMS) propio que permite la actualización dinámica de proyectos y avances de obra en tiempo real.",
     images: [
       "/thumbnails/proyects/PaginasWeb/1/1.png",
       "/thumbnails/proyects/PaginasWeb/1/2.png",
@@ -95,28 +108,28 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/1/4.png",
       "/thumbnails/proyects/PaginasWeb/1/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/1/1.png",
   },
   {
     id: 7,
     title: "Pagina Web de despacho de contadores",
     description:
-      "Pagina web de despacho de contadores desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios contables, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Interfaz web sofisticada enfocada en la autoridad de marca y la experiencia del usuario. Implementé un diseño minimalista, priorizando la legibilidad y la jerarquía visual de la oferta de servicios. La plataforma está optimizada para SEO y tiempos de carga mínimos, alojada en un entorno AWS que garantiza una disponibilidad del 99.9% para la consulta de información fiscal y servicios de auditoría.",
     images: [
       "/thumbnails/proyects/PaginasWeb/2/1.png",
       "/thumbnails/proyects/PaginasWeb/2/2.png",
       "/thumbnails/proyects/PaginasWeb/2/3.png",
       "/thumbnails/proyects/PaginasWeb/2/4.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/2/1.png",
   },
   {
     id: 8,
     title: "Pagina Web de empresa de soluciones empresariales y comerciales",
     description:
-      "Pagina web de empresa de soluciones empresariales y comerciales desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios empresariales y comerciales, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Plataforma web de alto rendimiento desarrollada para la centralización y oferta de servicios empresariales complejos. Implementé una arquitectura moderna utilizando React para la interfaz de usuario y una infraestructura en AWS que garantiza alta disponibilidad. La solución integra un sistema de despacho de consultas optimizado y una estructura de navegación fluida, asegurando que la entrega de activos visuales y contenido comercial sea instantánea mediante el uso de NGINX como proxy inverso.",
     images: [
       "/thumbnails/proyects/PaginasWeb/3/1.png",
       "/thumbnails/proyects/PaginasWeb/3/2.png",
@@ -124,14 +137,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/3/4.png",
       "/thumbnails/proyects/PaginasWeb/3/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/3/1.png",
   },
   {
     id: 9,
     title: "Pagina Web de servicio de vigilancia",
     description:
-      "Pagina web de servicio de vigilancia desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de vigilancia, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Desarrollo de una plataforma corporativa de alto rendimiento diseñada para la oferta de servicios de seguridad privada. Implementé una infraestructura robusta en AWS que garantiza alta disponibilidad y tiempos de respuesta mínimos. La aplicación utiliza React para una navegación fluida y Tailwind CSS para una interfaz de alta visibilidad, integrando módulos de consulta de servicios dinámicos y un sistema de prospección de clientes optimizado mediante el manejo seguro de datos y comunicaciones.",
     images: [
       "/thumbnails/proyects/PaginasWeb/5/1.png",
       "/thumbnails/proyects/PaginasWeb/5/2.png",
@@ -139,14 +152,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/5/4.png",
       "/thumbnails/proyects/PaginasWeb/5/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/5/1.png",
   },
   {
     id: 10,
     title: "Pagina Web de una consultora",
     description:
-      "Pagina web de una consultora desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de consultoría, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Plataforma corporativa de alto rendimiento desarrollada para la oferta de servicios profesionales complejos. Implementé una arquitectura escalable en AWS que garantiza alta disponibilidad y una entrega de contenido optimizada mediante una infraestructura de nube robusta. La aplicación utiliza React para una gestión de estado fluida y Tailwind CSS para un diseño responsivo de alta fidelidad, integrando flujos de contacto automatizados y una navegación semántica que facilita la exploración de soluciones empresariales.",
     images: [
       "/thumbnails/proyects/PaginasWeb/6/1.png",
       "/thumbnails/proyects/PaginasWeb/6/2.png",
@@ -156,14 +169,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/6/6.png",
       "/thumbnails/proyects/PaginasWeb/6/7.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/6/1.png",
   },
   {
     id: 11,
     title: "Pagina Web de liogistica de paquetes",
     description:
-      "Pagina web de logistica de paquetes desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de logistica de paquetes, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución web integral para la administración de flujos logísticos y envíos nacionales/internacionales. Desarrollé una arquitectura escalable en AWS que permite el procesamiento de solicitudes de transporte en tiempo real y la optimización de rutas. La plataforma utiliza React para gestionar un panel de control interactivo donde los usuarios pueden cotizar envíos dinámicamente, realizar seguimiento de guías y gestionar documentación digital de manera segura y eficiente.",
     images: [
       "/thumbnails/proyects/PaginasWeb/7/1.png",
       "/thumbnails/proyects/PaginasWeb/7/2.png",
@@ -171,14 +184,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/7/4.png",
       "/thumbnails/proyects/PaginasWeb/7/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/7/1.png",
   },
   {
     id: 12,
     title: "Pagina Web de una lavanderia",
     description:
-      "Pagina web de una lavanderia desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de lavanderia, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Aplicación web enfocada en la experiencia del usuario final, permitiendo una gestión fluida de servicios de lavandería y tintorería.Preorizo la facilidad de uso y la claridad visual. La solución integra un motor de cálculo de costos dinámico y una infraestructura en la nube que garantiza una navegación rápida, segura y disponible 24/7.",
     images: [
       "/thumbnails/proyects/PaginasWeb/8/1.png",
       "/thumbnails/proyects/PaginasWeb/8/2.png",
@@ -186,14 +199,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/8/4.png",
       "/thumbnails/proyects/PaginasWeb/8/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/8/1.png",
   },
   {
     id: 13,
     title: "Pagina Web de una prestadora de servicios empresariales",
     description:
-      "Pagina web de una prestadora de servicios empresariales desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios empresariales, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Interfaz corporativa sofisticada enfocada en la autoridad de marca y el engagement del usuario. Utilicé Tailwind CSS para crear una experiencia visual premium, alineada con los estándares modernos de diseño minimalista. La plataforma está optimizada para SEO y conversión, integrando flujos de trabajo personalizados que permiten a los clientes corporativos explorar catálogos de servicios dinámicos con una respuesta de interfaz de baja latencia.",
     images: [
       "/thumbnails/proyects/PaginasWeb/9/1.png",
       "/thumbnails/proyects/PaginasWeb/9/2.png",
@@ -201,14 +214,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/9/4.png",
       "/thumbnails/proyects/PaginasWeb/9/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/9/1.png",
   },
   {
     id: 14,
     title: "Pagina Web de grupo de autores",
     description:
-      "Pagina web de grupo de autores desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de obras literarias, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Ecosistema digital diseñado para el asesoramiento integral de autores y la exhibición de obras literarias. Implementé una arquitectura escalable en AWS que asegura la entrega de contenido multimedia mediante una infraestructura de alta disponibilidad.",
     images: [
       "/thumbnails/proyects/PaginasWeb/10/1.png",
       "/thumbnails/proyects/PaginasWeb/10/2.png",
@@ -216,14 +229,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/10/4.png",
       "/thumbnails/proyects/PaginasWeb/10/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/10/1.png",
   },
   {
     id: 15,
     title: "Pagina Web de despacho de abogados y contadores",
     description:
-      "Pagina web de despacho de abogados y contadores desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios legales y contables, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Interfaz de alta gama diseñada para proyectar autoridad y confianza en los sectores legal y contable. La plataforma está optimizada para la conversión de clientes corporativos, integrando formularios de prospección automatizados vía AWS SES y una arquitectura de frontend reactiva que minimiza la latencia de navegación.",
     images: [
       "/thumbnails/proyects/PaginasWeb/11/1.png",
       "/thumbnails/proyects/PaginasWeb/11/2.png",
@@ -231,14 +244,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/11/4.png",
       "/thumbnails/proyects/PaginasWeb/11/5.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/11/1.png",
   },
   {
     id: 16,
     title: "Pagina Web de servicios de construccion",
     description:
-      "Pagina web de servicios de construccion desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de construccion, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución web de alta gama enfocada en la autoridad de marca y la experiencia visual. La plataforma integra flujos de contacto optimizados y un catálogo dinámico que permite a los inversores explorar proyectos mediante una navegación interactiva y sofisticada.",
     images: [
       "/thumbnails/proyects/PaginasWeb/12/1.png",
       "/thumbnails/proyects/PaginasWeb/12/2.png",
@@ -247,14 +260,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/12/5.png",
       "/thumbnails/proyects/PaginasWeb/12/6.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/12/1.png",
   },
   {
     id: 17,
     title: "Pagina Web de renta de propiedades",
     description:
-      "Pagina web de renta de propiedades desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de propiedades en renta, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución web moderna enfocada en la conversión y la experiencia de usuario. Desarrollada con un stack de React y estilizada bajo principios de diseño limpio con Tailwind CSS, esta plataforma ofrece una navegación personalizada y reactiva. La gestión de imágenes y el despliegue se delegaron a servicios de AWS, logrando un entorno escalable y de alto rendimiento visual.",
     images: [
       "/thumbnails/proyects/PaginasWeb/13/1.png",
       "/thumbnails/proyects/PaginasWeb/13/2.png",
@@ -263,14 +276,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/13/5.png",
       "/thumbnails/proyects/PaginasWeb/13/6.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/13/1.png",
   },
   {
     id: 18,
     title: "Pagina Web de servicio de renta de transporte",
     description:
-      "Pagina web de servicio de renta de transporte desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de renta de transporte, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución integral de transporte diseñada con un enfoque mobile-first y estética minimalista. Utilizando React, desarrollé una interfaz altamente intuitiva que permite el seguimiento de servicios en tiempo real. La integración con Tailwind CSS permitió un diseño modular y mantenible, mientras que el uso de servicios en la nube de AWS asegura la integridad y seguridad de la información del usuario. Destaca por su sistema de reservas dinámico y una navegación personalizada basada en preferencias de movilidad.",
     images: [
       "/thumbnails/proyects/PaginasWeb/14/1.png",
       "/thumbnails/proyects/PaginasWeb/14/2.png",
@@ -279,14 +292,14 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/14/5.png",
       "/thumbnails/proyects/PaginasWeb/14/6.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/14/1.png",
   },
   {
     id: 19,
     title: "Pagina Web de venta y renta de maquinaria de construccion",
     description:
-      "Pagina web de venta y renta de maquinaria de construccion desarrollada con React, Tailwind CSS y AWS. Permite a los usuarios explorar y acceder a una variedad de servicios de venta y renta de maquinaria de construccion, ofreciendo una experiencia de navegación interactiva y personalizada.",
+      "Solución digital de alto rendimiento que moderniza el acceso a equipos de construcción. Utilizando React, construí una experiencia de usuario ágil que facilita la comparación de especificaciones técnicas en tiempo real. El diseño, estructurado con Tailwind CSS, proyecta solidez corporativa y permite una navegación intuitiva incluso en inventarios extensos. Respaldada por servicios cloud de AWS, la plataforma asegura máxima disponibilidad, integridad transaccional y tiempos de carga reducidos.",
     images: [
       "/thumbnails/proyects/PaginasWeb/15/1.png",
       "/thumbnails/proyects/PaginasWeb/15/2.png",
@@ -297,7 +310,7 @@ export const OTHERS_PROJECTS_DATA = [
       "/thumbnails/proyects/PaginasWeb/15/7.png",
       "/thumbnails/proyects/PaginasWeb/15/8.png",
     ],
-    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "AWS S3"],
     previewUrl: "/thumbnails/proyects/PaginasWeb/15/1.png",
   },
 ];
