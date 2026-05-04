@@ -42,7 +42,7 @@ export default function ProjectsSection() {
             <SectionCard
               data={ADMIN_ARCHIVOS_DATA}
               openModal={handleOpenModal}
-              gridClass="grid-cols-1 sm:grid-cols-2"
+              gridClass="grid-cols-1"
               hasBlur
             />
           </div>
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
             <SectionCard
               data={GASOLINERIA_DATA}
               openModal={handleOpenModal}
-              gridClass="grid-cols-1 sm:grid-cols-2"
+              gridClass="grid-cols-1"
               hasBlur
             />
           </div>

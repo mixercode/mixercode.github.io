@@ -17,15 +17,16 @@ export default function MainLayout() {
   return (
     <DottedBackground>
       <div
-        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8 lg:py-5 flex flex-col lg:flex-row gap-8"
+        className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 lg:py-12 flex flex-col lg:flex-row gap-12 md:gap-8 lg:gap-12"
         ref={layoutRef}
       >
         <GlobalSpotlight
           gridRef={layoutRef}
-          spotlightRadius={200}
+          spotlightRadius={300}
           glowColor="22, 74, 232"
           cardSelector=".spotlight-card"
         />
+        
         <aside className="w-full lg:w-80 lg:sticky lg:top-12 h-fit shrink-0">
           <InfoCard
             name={USER_INFO.name}
@@ -34,7 +35,8 @@ export default function MainLayout() {
             cellphone={USER_INFO.cellphone}
           />
         </aside>
-        <main className="flex-1 min-w-0 z-10">
+
+        <main className="flex-1 min-w-0 space-y-8">
           <Outlet />
         </main>
       </div>

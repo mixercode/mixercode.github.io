@@ -4,11 +4,11 @@ import { CERTIFICATES_TEXT } from "../data/portafolioData";
 
 export default function CertificatePage() {
   return (
-    <>
+    <div className="space-y-12">
       <NavigationCard title={"Certificados"}>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-col gap-4">
           {CERTIFICATES_TEXT.paragraphs.map((text, index) => (
-            <p key={index} className="w-full text-left">
+            <p key={index} className="w-full text-left text-white/80 leading-relaxed">
               {text}
             </p>
           ))}
@@ -16,6 +16,6 @@ export default function CertificatePage() {
       </NavigationCard>
 
       <CertificatesSection />
-    </>
+    </div>
   );
 }

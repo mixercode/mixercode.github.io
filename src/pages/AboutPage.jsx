@@ -5,21 +5,25 @@ import { ABOUT_ME_DATA } from "../data/portafolioData";
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="space-y-12">
       <NavigationCard title="Sobre mi">
-        <div className="flex flex-col md:flex-row items-start gap-10">
-          <article className="flex-[1.5] space-y-4">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
+          <article className="flex-[1.5] space-y-6">
             {ABOUT_ME_DATA.paragraphs.map((text, index) => (
               <p
                 key={index}
-                className={`text-left leading-relaxed ${index === 0 ? "text-lg text-white/95 font-medium" : "text-base  text-white/80"}`}
+                className={`text-left leading-relaxed transition-colors duration-300 ${
+                  index === 0 
+                    ? "text-lg md:text-xl text-white/95 font-medium" 
+                    : "text-base text-white/70 hover:text-white/90"
+                }`}
               >
                 {index === 0 ? (
                   <>
                     Hola, soy{" "}
-                    <strong className="text-white font-bold">
+                    <span className="text-blue-400 font-bold decoration-blue-400/30 underline decoration-2 underline-offset-4">
                       {ABOUT_ME_DATA.name}
-                    </strong>
+                    </span>
                     . {text}
                   </>
                 ) : (
@@ -29,21 +33,39 @@ export default function AboutPage() {
             ))}
           </article>
 
-          <div className="flex-1 w-full opacity-90 hover:opacity-100 transition-opacity duration-300">
-            <DeveloperSkillsCard />
+          <div className="flex-1 w-full lg:max-w-xs group">
+            <div className="relative">
+               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+               <div className="relative">
+                  <DeveloperSkillsCard />
+               </div>
+            </div>
           </div>
         </div>
       </NavigationCard>
 
-      <div className="flex flex-row items-center gap-4 mt-10 mb-6">
-        <div
-          aria-hidden="true"
-          className="w-5 h-5 rounded-full border-10 border-[#164ae8] shadow-[0_0_8px_rgba(22,74,232,0.5)]"
-        />
-        <h2 className="text-3xl font-bold text-gray-100 ">Stack tecnológico</h2>
-      </div>
+      <section className="space-y-8 px-2 md:px-0">
+        <div className="flex items-center gap-4">
+          <div className="relative flex items-center justify-center">
+            <div className="absolute w-4 h-4 bg-blue-500 rounded-full animate-ping opacity-20" />
+            <div
+              aria-hidden="true"
+              className="relative w-3 h-3 rounded-full bg-blue-600 shadow-[0_0_15px_rgba(37,99,235,0.6)]"
+            />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+            Stack tecnológico
+          </h2>
+          <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-4" />
+        </div>
 
-      <TecnologyIconsCard />
-    </>
+        <div className="relative group">
+          <div className="absolute -inset-2 bg-gradient-to-b from-blue-600/5 to-transparent rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+          <div className="relative">
+            <TecnologyIconsCard />
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

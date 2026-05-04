@@ -83,7 +83,7 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
 
             {/* Miniaturas (Thumbnails) */}
             {project.images.length > 1 && (
-              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-[#2A2F3E] scrollbar-track-transparent">
+              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-none md:scrollbar-thin scrollbar-thumb-[#2A2F3E] scrollbar-track-transparent">
                 {project.images.map((img, index) => (
                   <button
                     key={index}

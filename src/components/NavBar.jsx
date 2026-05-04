@@ -8,8 +8,8 @@ const NAV_ITEMS = [
 
 export default function NavBar() {
   return (
-    <nav className="backdrop-blur-md bg-[#151926cc] border border-[#2A2F3E] rounded-full overflow-hidden px-8 py-4 min-w-75 shadow-lg">
-      <ul className="flex flex-row gap-8 items-center justify-center">
+    <nav className="backdrop-blur-md bg-[#151926cc] border border-[#2A2F3E] rounded-full overflow-hidden px-4 sm:px-8 py-3 sm:py-4 w-full sm:min-w-75 shadow-lg">
+      <ul className="flex flex-row gap-4 sm:gap-8 items-center justify-center">
         {NAV_ITEMS.map(({ path, label }) => (
           <li key={path}>
             <NavLink
@@ -17,8 +17,8 @@ export default function NavBar() {
               end
               className={({ isActive }) =>
                 isActive
-                  ? "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-[#164AE8]"
-                  : "relative group flex flex-col items-center justify-center text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors duration-300"
+                  ? "relative group flex flex-col items-center justify-center text-[10px] sm:text-sm font-bold uppercase tracking-widest text-[#164AE8]"
+                  : "relative group flex flex-col items-center justify-center text-[10px] sm:text-sm font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors duration-300"
               }
             >
               {({ isActive }) => (

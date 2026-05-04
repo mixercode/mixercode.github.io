@@ -8,19 +8,23 @@ const WINDOW_CONTROLS = [
 
 export default function WindowCard({ children }) {
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-[#2A2F3E] bg-[#00000033]">
-      <div className="flex items-center px-3 pt-2 -space-x-3">
-        {WINDOW_CONTROLS.map((control) => (
-          <RxDotFilled
-            key={control.id}
-            color={control.color}
-            size={35}
-            className="transition duration-200 hover:brightness-200 cursor-pointer"
-            aria-hidden="true"
-          />
-        ))}
+    <div className="flex flex-col rounded-xl border border-white/10 bg-[#1e1e1e]/80 backdrop-blur-md shadow-2xl overflow-hidden">
+      <div className="flex items-center justify-between px-4 py-2 bg-[#252526] border-b border-white/5">
+        <div className="flex gap-1.5">
+          <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
+          <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+          <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
+        </div>
+        <div className="flex-1 text-center">
+          <span className="text-[10px] uppercase tracking-[0.2em] text-white/20 font-bold select-none">
+            soft-skills.js
+          </span>
+        </div>
+        <div className="w-12" /> {/* Spacer to center title */}
       </div>
-      <div className="px-2 pb-2">{children}</div>
+      <div className="relative">
+        {children}
+      </div>
     </div>
   );
 }

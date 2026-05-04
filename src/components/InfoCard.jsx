@@ -8,25 +8,29 @@ import ContactItem from "./ContactItem";
 
 export default function InfoCard({ name, location, email, cellphone }) {
   return (
-    <Card className="p-6">
-      <div className="flex flex-col items-center gap-5">
-        <img
-          src={image}
-          alt={`Foto de ${name}`}
-          className="w-2/3 rounded-full border-4 border-[#1c2a56]"
-        />
-
-        <p className="text-xl font-semibold text-center">{name}</p>
-
-        <div className="w-2/3 rounded-full bg-[#121b36] px-4 py-1 text-center">
-          <p className="text-base font-medium text-gray-400">
-            Desarrollador Web Fullstack
-          </p>
+    <Card className="p-6 md:p-8">
+      <div className="flex flex-col items-center gap-6">
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <img
+            src={image}
+            alt={`Foto de ${name}`}
+            className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#1c2a56] object-cover shadow-xl"
+          />
         </div>
 
-        <div className="w-full border-t border-white/20" />
+        <div className="space-y-2 text-center">
+          <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">{name}</h1>
+          <div className="inline-block rounded-full bg-blue-500/10 px-4 py-1.5 border border-blue-500/20">
+            <p className="text-xs md:text-sm font-semibold text-blue-400 uppercase tracking-wider">
+              Fullstack Developer
+            </p>
+          </div>
+        </div>
 
-        <div className="flex w-full flex-col gap-3">
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+        <div className="flex w-full flex-col gap-4">
           <ContactItem icon={MdEmail} label="Email" value={email} />
           <ContactItem icon={FaPhoneAlt} label="Celular" value={cellphone} />
           <ContactItem
@@ -35,9 +39,18 @@ export default function InfoCard({ name, location, email, cellphone }) {
             value={location}
           />
         </div>
-        <a href="https://github.com/mixercode/mixercode">
-          <IoLogoGithub size={30} color="white" />
-        </a>
+
+        <div className="pt-4 flex justify-center">
+          <a 
+            href="https://github.com/mixercode" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 hover:scale-110 active:scale-95"
+            aria-label="GitHub Profile"
+          >
+            <IoLogoGithub size={24} className="text-white" />
+          </a>
+        </div>
       </div>
     </Card>
   );

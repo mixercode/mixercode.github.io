@@ -24,7 +24,7 @@ export default function ModalCertificates({ isOpen, onClose, pdfUrl, title }) {
       aria-labelledby="modal-title"
     >
       <div
-        className="relative w-full max-w-5xl h-[90vh] sm:h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
+        className="relative w-full max-w-5xl h-[60vh] sm:h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center px-6 py-2 border-b border-[#2A2F3E] bg-[#1a1f2e]">
@@ -44,11 +44,11 @@ export default function ModalCertificates({ isOpen, onClose, pdfUrl, title }) {
         </div>
 
         {/* Body - Contenedor del PDF */}
-        <div className="grow w-full h-full bg-[#0d111a] relative">
+        <div className="grow w-full bg-[#0d111a] relative flex items-center justify-center overflow-hidden p-2 sm:p-0">
           <iframe
-            src={`${pdfUrl}#toolbar=0`}
+            src={`${pdfUrl}#view=FitH&toolbar=0&navpanes=0&scrollbar=0`}
             title={`Certificado de ${title}`}
-            className="w-full h-full border-none absolute inset-0"
+            className="w-full h-full border-none rounded-lg sm:h-[95%] sm:w-[95%]"
           />
         </div>
       </div>
