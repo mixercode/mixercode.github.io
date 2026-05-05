@@ -20,7 +20,9 @@ export default function InfoCard({ name, location, email, cellphone }) {
         </div>
 
         <div className="space-y-2 text-center">
-          <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">{name}</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+            {name}
+          </h1>
           <div className="inline-block rounded-full bg-blue-500/10 px-4 py-1.5 border border-blue-500/20">
             <p className="text-xs md:text-sm font-semibold text-blue-400 uppercase tracking-wider">
               Fullstack Developer
@@ -41,9 +43,9 @@ export default function InfoCard({ name, location, email, cellphone }) {
         </div>
 
         <div className="pt-4 flex justify-center">
-          <a 
-            href="https://github.com/mixercode" 
-            target="_blank" 
+          <a
+            href="https://github.com/mixercode"
+            target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 hover:scale-110 active:scale-95"
             aria-label="GitHub Profile"

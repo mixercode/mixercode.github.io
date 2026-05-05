@@ -7,7 +7,7 @@ export default function Card({
   allowOverflow = false,
   isRounded = true,
 }) {
-  const roundedClasses = isRounded ? "rounded-[48px]" : "rounded-[16px]"; // Cambiado a 16px (1rem) estándar
+  const roundedClasses = isRounded ? "rounded-[48px]" : "rounded-[16px]";
 
   return (
     <ParticleCard

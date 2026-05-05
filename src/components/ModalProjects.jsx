@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { IoIosClose } from "react-icons/io";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export default function ModalProjectDetails({ isOpen, onClose, project }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -42,7 +43,6 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
         className="relative w-full max-w-6xl h-[90vh] sm:h-[85vh] bg-[#151926] border border-[#2A2F3E] rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* HEADER */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#2A2F3E] bg-[#1a1f2e] shrink-0">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-100 truncate pr-4 tracking-tight">
             {project.title}
@@ -55,33 +55,28 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
           </button>
         </div>
 
-        {/* BODY */}
         <div className="flex flex-col lg:flex-row grow overflow-y-auto lg:overflow-hidden bg-[#0d111a]">
-          {/* SECCIÓN IZQUIERDA: Galería */}
           <div className="w-full lg:w-3/5 p-6 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-[#2A2F3E] overflow-y-auto">
-            {/* CONTENEDOR DE IMAGEN PRINCIPAL MEJORADO */}
             <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[450px] bg-[#090b10] rounded-xl overflow-hidden border border-[#2A2F3E] flex items-center justify-center group">
-              {/* 1. Fondo Desenfocado (El secreto para el aspecto Premium) */}
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-40 blur-2xl scale-110 transition-all duration-500"
                 style={{
-                  backgroundImage: `url(${project.images[activeImageIndex]})`,
+                  backgroundImage: getPublicUrl(
+                    project.images[activeImageIndex],
+                  ),
                 }}
               />
 
-              {/* 2. Capa oscura sutil para garantizar contraste */}
               <div className="absolute inset-0 bg-black/20" />
 
-              {/* 3. Imagen Real (object-contain) */}
               <img
-                src={project.images[activeImageIndex]}
+                src={getPublicUrl(project.images[activeImageIndex])}
                 alt={`Captura principal de ${project.title}`}
                 className="relative z-10 w-full h-full object-contain transition-opacity duration-300 drop-shadow-2xl"
                 loading="lazy"
               />
             </div>
 
-            {/* Miniaturas (Thumbnails) */}
             {project.images.length > 1 && (
               <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-none md:scrollbar-thin scrollbar-thumb-[#2A2F3E] scrollbar-track-transparent">
                 {project.images.map((img, index) => (
@@ -94,9 +89,8 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
                         : "border-transparent opacity-50 hover:opacity-100"
                     }`}
                   >
-                    {/* Para las miniaturas mantenemos object-cover pero alineamos arriba por si son verticales */}
                     <img
-                      src={img}
+                      src={getPublicUrl(img)}
                       alt={`Miniatura ${index + 1}`}
                       className="w-full h-full object-cover object-top"
                     />
@@ -106,7 +100,6 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
             )}
           </div>
 
-          {/* SECCIÓN DERECHA: Detalles (Sin cambios, funciona perfecto) */}
           <div className="w-full lg:w-2/5 p-6 flex flex-col gap-6 overflow-y-auto scrollbar-thin scrollbar-thumb-[#2A2F3E] scrollbar-track-transparent">
             <div>
               <h4 className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">

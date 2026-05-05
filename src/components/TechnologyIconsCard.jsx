@@ -50,13 +50,12 @@ export default function TechnologyIconsCard() {
             className="group relative flex flex-col items-center gap-2 transition-all duration-300 hover:-translate-y-2"
           >
             <div className="relative p-3 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/20 transition-all duration-500 shadow-lg">
-              <Icon 
-                size={32} 
-                style={{ color: "white" }} 
+              <Icon
+                size={32}
+                style={{ color: "white", "--hover-color": color }}
                 className="transition-colors duration-500 group-hover:!text-[var(--hover-color)]"
-                style={{ "--hover-color": color }}
               />
-              <div 
+              <div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl"
                 style={{ backgroundColor: color }}
               />

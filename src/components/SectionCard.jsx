@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export default function SectionCard({
   data,
@@ -25,10 +26,12 @@ export default function SectionCard({
               onClick={() => openModal(item)}
             >
               <img
-                src={item.previewUrl}
+                src={getPublicUrl(item.previewUrl)}
                 alt={`Vista previa de ${item.title}`}
                 className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${
-                  hasBlur ? "blur-[2px] opacity-60" : "opacity-90 group-hover:opacity-100"
+                  hasBlur
+                    ? "blur-[2px] opacity-60"
+                    : "opacity-90 group-hover:opacity-100"
                 }`}
                 loading="lazy"
               />
@@ -41,7 +44,9 @@ export default function SectionCard({
                 </h3>
 
                 <div className="flex items-center gap-2 mt-3 text-xs md:text-sm font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
-                  <span className="uppercase tracking-[0.2em]">Ver detalles</span>
+                  <span className="uppercase tracking-[0.2em]">
+                    Ver detalles
+                  </span>
                   <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300">
                     &rarr;
                   </span>
