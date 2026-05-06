@@ -1,14 +1,38 @@
 export const ADMIN_ARCHIVOS_DATA = [
   {
     id: 1,
-    title: "Aplicacion web",
+    title: "Aplicacion web administrador",
     description:
-      "Aplicación web Fullstack diseñada para el manejo masivo de activos digitales en sectores de alta confidencialidad. Desarrollé una solución escalable que integra Node.js y PostgreSQL para la gestión de metadatos, optimizando la visualización de documentos mediante pre-signed URLs de AWS para garantizar la máxima seguridad. La interfaz cuenta con un diseño premium orientado a la eficiencia operativa, reduciendo el tiempo de búsqueda y organización de archivos críticos.",
+      "Plataforma integral de gestión documental y administración de recursos diseñada específicamente para despachos contables y jurídicos. La aplicación centraliza el flujo de información confidencial, permitiendo la organización estructurada de expedientes digitales (INE, Archivo Permanente, Declaraciones Anuales) y optimizando la colaboración entre los distintos roles del despacho.",
     images: [
       "/thumbnails/projects/AdminArchivos/Admin/1.png",
       "/thumbnails/projects/AdminArchivos/Admin/2.png",
       "/thumbnails/projects/AdminArchivos/Admin/3.png",
       "/thumbnails/projects/AdminArchivos/Admin/4.png",
+      "/thumbnails/projects/AdminArchivos/Admin/5.png",
+      "/thumbnails/projects/AdminArchivos/Admin/7.png",
+    ],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Express",
+      "Node.js",
+      "PostgreSQL",
+      "AWS S3",
+      "AWS EC2",
+      "AWS SES",
+    ],
+    previewUrl: "/thumbnails/projects/AdminArchivos/Admin/1.png",
+  },
+  {
+    id: 2,
+    title: "Aplicacion web Contador y cliente",
+    description:
+      "Interfaz orientada al usuario final que actúa como el punto de contacto digital entre el cliente y el despacho. Esta aplicación permite a los clientes gestionar su propia información, eliminando la fricción de solicitar documentos por canales externos y proporcionando una visión clara de su situación financiera y fiscal con el despacho en tiempo real.",
+    images: [
+      "/thumbnails/projects/AdminArchivos/Admin/1.png",
+      "/thumbnails/projects/AdminArchivos/Admin/2.png",
       "/thumbnails/projects/AdminArchivos/Admin/5.png",
       "/thumbnails/projects/AdminArchivos/Admin/6.png",
       "/thumbnails/projects/AdminArchivos/Admin/7.png",
@@ -21,11 +45,13 @@ export const ADMIN_ARCHIVOS_DATA = [
       "Node.js",
       "PostgreSQL",
       "AWS S3",
+      "AWS EC2",
+      "AWS SES",
     ],
-    previewUrl: "/thumbnails/projects/AdminArchivos/Admin/1.png",
+    previewUrl: "/thumbnails/projects/AdminArchivos/Admin/2.png",
   },
   {
-    id: 2,
+    id: 3,
     title: "Aplicacion movile",
     description:
       "Solución móvil de alto rendimiento que optimiza el flujo de trabajo entre el despacho y el campo. Desarrollé una interfaz intuitiva con React Native que permite la carga, previsualización y categorización de archivos contables con un solo toque. El sistema utiliza URLs firmadas de AWS para garantizar una visualización segura y rápida, minimizando el consumo de datos y asegurando que la última versión de cada documento fiscal o legal esté siempre disponible para su revisión.",
