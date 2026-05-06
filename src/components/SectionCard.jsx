@@ -38,12 +38,12 @@ export default function SectionCard({
 
               <div className="absolute inset-0 bg-linear-to-t from-[#0d111a] via-[#0d111a]/60 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
-              <div className="relative z-10 px-6 py-5 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-out">
+              <div className="relative z-10 px-6 pt-6 pb-3 transform translate-y-4 group-hover:translate-y-2 transition-all duration-500 ease-out">
                 <h3 className="text-lg md:text-xl font-bold text-white tracking-tight line-clamp-2 drop-shadow-lg group-hover:text-indigo-300 transition-colors duration-300">
                   {item.title}
                 </h3>
 
-                <div className="flex items-center gap-2 mt-3 text-xs md:text-sm font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                <div className="flex items-center gap-2 mt-2 text-xs md:text-sm font-bold text-indigo-400 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                   <span className="uppercase tracking-[0.2em]">
                     Ver detalles
                   </span>

@@ -35,32 +35,30 @@ export default function ProjectsSection() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {ADMIN_ARCHIVOS_DATA && (
-          <div className="flex flex-col h-full">
-            <SectionHeader title="Admin de Archivos" />
-            <SectionCard
-              data={ADMIN_ARCHIVOS_DATA}
-              openModal={handleOpenModal}
-              gridClass="grid-cols-1"
-              hasBlur
-            />
-          </div>
-        )}
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8"></div> */}
+      {ADMIN_ARCHIVOS_DATA && (
+        <div className="flex flex-col h-full">
+          <SectionHeader title="Admin de Archivos" />
+          <SectionCard
+            data={ADMIN_ARCHIVOS_DATA}
+            openModal={handleOpenModal}
+            gridClass="grid-cols-1 sm: grid-cols-3"
+            hasBlur
+          />
+        </div>
+      )}
 
-        {GASOLINERIA_DATA && (
-          <div className="flex flex-col h-full">
-            <SectionHeader title="Gasolineria" />
-            <SectionCard
-              data={GASOLINERIA_DATA}
-              openModal={handleOpenModal}
-              gridClass="grid-cols-1"
-              hasBlur
-            />
-          </div>
-        )}
-      </div>
-
+      {GASOLINERIA_DATA && (
+        <div className="flex flex-col h-full">
+          <SectionHeader title="Gasolineria" />
+          <SectionCard
+            data={GASOLINERIA_DATA}
+            openModal={handleOpenModal}
+            gridClass="grid-cols-1 sm: grid-cols-3"
+            hasBlur
+          />
+        </div>
+      )}
       <div className="mb-12">
         <SectionHeader title="Otros Proyectos" />
         <SectionCard
