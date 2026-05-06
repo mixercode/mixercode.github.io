@@ -35,7 +35,7 @@ export default function AboutPage() {
 
           <div className="flex-1 w-full lg:max-w-xs group">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
               <div className="relative">
                 <DeveloperSkillsCard />
               </div>
@@ -56,11 +56,11 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
             Stack tecnológico
           </h2>
-          <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-4" />
+          <div className="flex-1 h-px bg-linear-to-r from-white/10 to-transparent ml-4" />
         </div>
 
         <div className="relative group">
-          <div className="absolute -inset-2 bg-gradient-to-b from-blue-600/5 to-transparent rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+          <div className="absolute -inset-2 bg-linear-to-b from-blue-600/5 to-transparent rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
           <div className="relative">
             <TecnologyIconsCard />
           </div>

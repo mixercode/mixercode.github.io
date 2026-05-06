@@ -11,7 +11,7 @@ export default function InfoCard({ name, location, email, cellphone }) {
     <Card className="p-6 md:p-8">
       <div className="flex flex-col items-center gap-6">
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="absolute -inset-1 bg-linear-to-r from-indigo-500 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <img
             src={image}
             alt={`Foto de ${name}`}
@@ -30,7 +30,7 @@ export default function InfoCard({ name, location, email, cellphone }) {
           </div>
         </div>
 
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="w-full h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
 
         <div className="flex w-full flex-col gap-4">
           <ContactItem icon={MdEmail} label="Email" value={email} />

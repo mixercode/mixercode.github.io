@@ -53,7 +53,7 @@ export default function TechnologyIconsCard() {
               <Icon
                 size={32}
                 style={{ color: "white", "--hover-color": color }}
-                className="transition-colors duration-500 group-hover:!text-[var(--hover-color)]"
+                className="transition-colors duration-500 group-hover:text-(--hover-color)!"
               />
               <div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl"

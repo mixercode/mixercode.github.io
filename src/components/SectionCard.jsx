@@ -22,7 +22,7 @@ export default function SectionCard({
             className="group cursor-pointer overflow-hidden transition-all duration-500 border-white/5 hover:border-indigo-500/40 ring-1 ring-white/5 hover:ring-indigo-500/20"
           >
             <div
-              className={`relative w-full aspect-[16/10] sm:aspect-square lg:aspect-[16/10] flex flex-col justify-end overflow-hidden ${glassEffect}`}
+              className={`relative w-full aspect-16/10 sm:aspect-square lg:aspect-16/10 flex flex-col justify-end overflow-hidden ${glassEffect}`}
               onClick={() => openModal(item)}
             >
               <img
@@ -36,7 +36,7 @@ export default function SectionCard({
                 loading="lazy"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d111a] via-[#0d111a]/60 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0d111a] via-[#0d111a]/60 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
               <div className="relative z-10 px-6 py-5 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-out">
                 <h3 className="text-lg md:text-xl font-bold text-white tracking-tight line-clamp-2 drop-shadow-lg group-hover:text-indigo-300 transition-colors duration-300">

@@ -57,7 +57,7 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
 
         <div className="flex flex-col lg:flex-row grow overflow-y-auto lg:overflow-hidden bg-[#0d111a]">
           <div className="w-full lg:w-3/5 p-6 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-[#2A2F3E] overflow-y-auto">
-            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[450px] bg-[#090b10] rounded-xl overflow-hidden border border-[#2A2F3E] flex items-center justify-center group">
+            <div className="relative w-full h-75 sm:h-100 lg:h-112.5 bg-[#090b10] rounded-xl overflow-hidden border border-[#2A2F3E] flex items-center justify-center group">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-40 blur-2xl scale-110 transition-all duration-500"
                 style={{
