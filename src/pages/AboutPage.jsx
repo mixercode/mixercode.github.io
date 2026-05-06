@@ -13,8 +13,8 @@ export default function AboutPage() {
               <p
                 key={index}
                 className={`text-left leading-relaxed transition-colors duration-300 ${
-                  index === 0 
-                    ? "text-lg md:text-xl text-white/95 font-medium" 
+                  index === 0
+                    ? "text-lg md:text-lg text-white/95 font-medium"
                     : "text-base text-white/70 hover:text-white/90"
                 }`}
               >
@@ -35,10 +35,10 @@ export default function AboutPage() {
 
           <div className="flex-1 w-full lg:max-w-xs group">
             <div className="relative">
-               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-               <div className="relative">
-                  <DeveloperSkillsCard />
-               </div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+              <div className="relative">
+                <DeveloperSkillsCard />
+              </div>
             </div>
           </div>
         </div>
