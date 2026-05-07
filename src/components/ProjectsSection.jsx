@@ -35,7 +35,6 @@ export default function ProjectsSection() {
         </div>
       )}
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8"></div> */}
       {ADMIN_ARCHIVOS_DATA && (
         <div className="mb-3">
           <SectionHeader title="Admin de Archivos" />
@@ -48,7 +47,7 @@ export default function ProjectsSection() {
       )}
 
       {GASOLINERIA_DATA && (
-        <div className="flex flex-col h-full">
+        <div className="mb-3">
           <SectionHeader title="Gasolineria" />
           <SectionCard
             data={GASOLINERIA_DATA}
@@ -57,7 +56,7 @@ export default function ProjectsSection() {
           />
         </div>
       )}
-      <div className="mb-12">
+      <div className="mb-3">
         <SectionHeader title="Otros Proyectos" />
         <SectionCard
           data={OTHERS_PROJECTS_DATA}
