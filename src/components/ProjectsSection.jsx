@@ -37,12 +37,11 @@ export default function ProjectsSection() {
 
       {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8"></div> */}
       {ADMIN_ARCHIVOS_DATA && (
-        <div className="flex flex-col h-full">
+        <div className="mb-3">
           <SectionHeader title="Admin de Archivos" />
           <SectionCard
             data={ADMIN_ARCHIVOS_DATA}
             openModal={handleOpenModal}
-            gridClass="grid-cols-1 sm: grid-cols-3"
             hasBlur
           />
         </div>
@@ -54,7 +53,6 @@ export default function ProjectsSection() {
           <SectionCard
             data={GASOLINERIA_DATA}
             openModal={handleOpenModal}
-            gridClass="grid-cols-1 sm: grid-cols-3"
             hasBlur
           />
         </div>
