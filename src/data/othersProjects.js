@@ -87,14 +87,14 @@ export const OTHERS_PROJECTS_DATA = [
     description:
       "Aplicación móvil multiplataforma diseñada para la gestión de programas de lealtad empresarial. Implementé una arquitectura basada en microtransacciones que garantiza la integridad del saldo de los usuarios mediante el uso de transacciones atómicas en la base de datos. La solución utiliza AWS para el procesamiento de eventos en tiempo real, permitiendo la asignación y redención instantánea de puntos mediante escaneo de códigos QR .",
     images: [
-      "/thumbnails/projects/Wallet/1.jpg",
-      "/thumbnails/projects/Wallet/2.jpg",
-      "/thumbnails/projects/Wallet/3.jpg",
-      "/thumbnails/projects/Wallet/4.jpg",
-      "/thumbnails/projects/Wallet/5.jpg",
+      "/thumbnails/projects/Wallet/1.webp",
+      "/thumbnails/projects/Wallet/2.png",
+      "/thumbnails/projects/Wallet/3.png",
+      "/thumbnails/projects/Wallet/4.png",
+      "/thumbnails/projects/Wallet/5.png",
     ],
     technologies: ["React Native", "JavaScript", "AWS EC2"],
-    previewUrl: "/thumbnails/projects/Wallet/1.jpg",
+    previewUrl: "/thumbnails/projects/Wallet/1.webp",
   },
   {
     id: 6,

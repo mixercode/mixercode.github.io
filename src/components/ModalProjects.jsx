@@ -37,7 +37,7 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
       setActiveImageIndex((prev) => (prev + 1) % project.images.length);
     } else if (isRightSwipe) {
       setActiveImageIndex((prev) =>
-        prev === 0 ? project.images.length - 1 : prev - 1
+        prev === 0 ? project.images.length - 1 : prev - 1,
       );
     }
 
@@ -171,6 +171,7 @@ export default function ModalProjectDetails({ isOpen, onClose, project }) {
                       src={getPublicUrl(img)}
                       alt={`Miniatura ${index + 1}`}
                       className="w-full h-full object-cover object-top"
+                      loading="lazy"
                     />
                   </button>
                 ))}
